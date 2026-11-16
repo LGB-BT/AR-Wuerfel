@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AR Würfel</title>
+    <style>
+      :root {
+        --bg: #0f172a;
+        --panel: #111827;
+        --card: #1f2937;
+        --accent: #22c55e;
+        --accent-2: #60a5fa;
+        --text: #e5e7eb;
+        --muted: #94a3b8;
+      }
+
+      * { box-sizing: border-box; }
+
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background: linear-gradient(135deg, var(--bg), #111827 45%, #0b1120);
+        color: var(--text);
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .container {
+        width: min(900px, 90vw);
+        background: rgba(17, 24, 39, 0.9);
+        border: 1px solid rgba(148, 163, 184, 0.2);
+        border-radius: 20px;
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+        padding: 40px 32px;
+      }
+
+      .badge {
+        display: inline-block;
+        background: rgba(34, 197, 94, 0.15);
+        color: var(--accent);
+        border: 1px solid rgba(34, 197, 94, 0.4);
+        padding: 8px 12px;
+        border-radius: 999px;
+        font-size: 12px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        margin-bottom: 18px;
+      }
+
+      h1 {
+        margin: 0 0 12px;
+        font-size: clamp(2.2rem, 5vw, 4rem);
+        line-height: 1.1;
+      }
+
+      p {
+        margin: 0 0 18px;
+        color: var(--muted);
+        font-size: 1.05rem;
+        line-height: 1.7;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 18px;
+        margin-top: 28px;
+      }
+
+      .card {
+        background: var(--card);
+        border: 1px solid rgba(148, 163, 184, 0.2);
+        border-radius: 14px;
+        padding: 20px;
+      }
+
+      .card h2 {
+        margin: 0 0 10px;
+        font-size: 1.15rem;
+      }
+
+      .card p {
+        margin: 0;
+        font-size: 0.98rem;
+      }
+
+      .cta {
+        display: inline-block;
+        margin-top: 26px;
+        text-decoration: none;
+        color: #08111d;
+        background: linear-gradient(135deg, var(--accent), var(--accent-2));
+        padding: 14px 22px;
+        border-radius: 12px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <div class="badge">AR Experience</div>
+      <h1>AR Würfel</h1>
+      <p>
+        Eine einfache GitHub Pages-Startseite für das Projekt <strong>AR-Wuerfel</strong>.
+        Diese Seite kann als Basis für eine Web- oder AR-Visualisierung genutzt werden
+        und ist sofort für den GitHub Pages-Deploy vorbereitet.
+      </p>
+
+      <div class="grid">
+        <section class="card">
+          <h2>Projekt</h2>
+          <p>Basis für eine Augmented-Reality-Umgebung mit interaktiven Würfel-Elementen.</p>
+        </section>
+        <section class="card">
+          <h2>Hosting</h2>
+          <p>GitHub Pages kann diese Datei automatisch als Startseite für das Repository serven.</p>
+        </section>
+        <section class="card">
+          <h2>Ready</h2>
+          <p>Die Datei <code>index.html</code> liegt im Repository-Root und ist für den Service vorbereitet.</p>
+        </section>
+      </div>
+
+      <a class="cta" href="https://github.com/LGB-BT/AR-Wuerfel">Zum Repository</a>
+    </main>
+  </body>
+</html>
